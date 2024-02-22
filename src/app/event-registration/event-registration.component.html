@@ -1,0 +1,8 @@
+<div class="registration-container">
+    <h1 class="title">Enter A-Badge</h1>
+    <form class="registration-form" (ngSubmit)="onSubmit()" #regForm="ngForm">
+      <input type="text" id="badgeId" name="badgeId" [(ngModel)]="badgeId" placeholder="A123456" pattern="[A-Za-z]{1}[0-9]{6}" required>
+      <button type="submit" class="submit-btn" [disabled]="!regForm.valid">Submit</button>
+    </form>
+  </div>
+  
