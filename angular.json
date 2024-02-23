@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs/ucep",
+            "outputPath": "dist/ucep",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
