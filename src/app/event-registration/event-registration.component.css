@@ -30,7 +30,7 @@
   .submit-btn {
     font-size: 16px;
     color: white;
-    background-color: rgb(8, 108, 63); /* Example button color */
+    background-color: #044014; /* Example button color */
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -38,5 +38,5 @@
   }
   
   .submit-btn:hover {
-    background-color: rgb(6, 81, 47); /* Darker shade for hover effect */
+    background-color: #0F5319; /* Darker shade for hover effect */
   }

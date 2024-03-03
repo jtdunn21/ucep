@@ -1,3 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
 .confirm-badge-container {
   /* display: flex;
   flex-direction: column;
@@ -5,7 +14,7 @@
   justify-content: center;
   height: 100vh;
   background-color: #f0f0f0; */
-  width: 420 px;
+  width: auto;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
@@ -15,7 +24,7 @@
   padding: 30px 40px;
 }
 
-.display-badge-container {
+/* .display-badge-container {
   color: white;
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.8),
@@ -33,7 +42,7 @@
   text-align: center;
   border-radius: 10px;
   padding: 30px 40px;
-}
+} */
 
 .title {
   font-size: 24px;
@@ -58,7 +67,7 @@
 .submit-btn {
   font-size: 16px;
   color: white;
-  background-color: rgb(8, 108, 63); /* Example button color */
+  background-color: #044014; /* Example button color */
   border: none;
   padding: 10px;
   border-radius: 4px;
@@ -66,5 +75,19 @@
 }
 
 .submit-btn:hover {
-  background-color: rgb(6, 81, 47); /* Darker shade for hover effect */
+  background-color: #0F5319; /* Darker shade for hover effect */
+}
+
+.display-head {
+  font-family: 'Roboto Slab', sans-serif; /* Specify the font family */
+  font-size: 3rem; /* 3rem font size */
+  line-height: 5rem; /* 3.25rem line height */
+  font-weight: 300; /* Font weight 300 */
+  letter-spacing: -1px; /* -1px tracking (letter spacing) */
+  text-align: center;
+}
+
+.display-head h2 {
+  margin: 0 20px 20px 20px; /* 0 top, 20px right, 20px bottom, 20px left */
+  padding: 10px;
 }

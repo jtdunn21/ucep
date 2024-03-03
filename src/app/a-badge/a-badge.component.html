@@ -1,9 +1,16 @@
-<div class="registration-container">
-  <h1 class="title">Enter Badge</h1>
-  <form class="registration-form" (ngSubmit)="onSubmit()" #regForm="ngForm">
-    <input type="text" id="badgeId" name="badgeId" [(ngModel)]="badgeId" 
-       (input)="autoCapitalize()" placeholder="A123456" 
-       pattern="A[0-9]{6}" maxlength="7" required>
-    <button type="submit" class="submit-btn" [disabled]="!regForm.valid">Submit</button>
-  </form>
+
+<div class="container">
+  <div class="display-head">
+    <h1><strong>Event Central</strong></h1>
+  </div>
+
+  <div class="registration-container">
+    <h1 class="title">Enter Badge</h1>
+    <form class="registration-form" (ngSubmit)="onSubmit()" #regForm="ngForm">
+      <input type="text" id="badgeId" name="badgeId" [(ngModel)]="badgeId" 
+        (input)="autoCapitalize()" placeholder="A123456" 
+        pattern="A[0-9]{6}" maxlength="7" required>
+      <button type="submit" class="submit-btn" [disabled]="!regForm.valid">Submit</button>
+    </form>
+  </div>
 </div>

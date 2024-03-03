@@ -1,10 +1,19 @@
-<div class="event-confirm-container">
-  <h2 class="title">Confirm Attendance</h2>
-  <p>Attending <strong>{{ eventName }}</strong>?</p>
-  <br>
-  <form class="event-confirm-form">
-    <button (click)="confirmEvent(true)" class="submit-btn">Yes</button>
-    <br>
-    <button (click)="confirmEvent(false)" class="submit-btn">Not now, go back to event list</button>
-  </form>
+<div class="container">
+  <div class="display-head">
+    <h2>Confirm Attendance</h2>
+  </div>
+  
+  <div class="event-confirm-container">
+    <div class="event-confirm-content">
+      <div class="event-confirm-text">
+        <p>Are you attending <strong>{{ eventName }}</strong>?</p>
+      </div>
+      <br>
+      <form class="event-confirm-form">
+        <button (click)="confirmEvent(true)" class="submit-btn">Yes</button>
+        <br>
+        <button (click)="confirmEvent(false)" class="submit-btn">Not now, go back to event list</button>
+      </form>
+    </div>
+  </div>
 </div>
