@@ -10,6 +10,7 @@
 .event-list ul {
   list-style-type: none;
   padding: 0;
+  
 }
 
 .event-list li {
@@ -17,6 +18,13 @@
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  width: 420 px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: black;
+  border-radius: 10px;
 }
 
 .event-list h3 {
@@ -28,7 +36,7 @@
 }
 
 .event-list button {
-  background-color: #007bff;
+  background-color: rgb(8, 108, 63);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -37,5 +45,5 @@
 }
 
 .event-list button:hover {
-  background-color: #0056b3;
+  background-color: rgb(6, 81, 47);
 }

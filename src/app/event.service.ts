@@ -4,7 +4,10 @@ interface Event {
   id: number;
   name: string;
   date: string;
-  badgeId: string; // Add badgeId property
+  time: string; 
+  badgeId: string; 
+  location: string;
+  description: string;
   // Add more properties as needed
 }
 
@@ -13,10 +16,42 @@ interface Event {
 })
 export class EventService {
   private events: Event[] = [
-    { id: 1, name: 'Event 1', date: '2024-01-01', badgeId: 'badge1'},
-    { id: 2, name: 'Event 2', date: '2024-02-01', badgeId: 'badge2'},
-    { id: 3, name: 'Event 3', date: '2024-03-01', badgeId: 'badge3'},
-    { id: 4, name: 'Event 4', date: '2024-04-01', badgeId: 'badge4'}
+    { 
+      id: 1, 
+      name: 'TechCon 2024', 
+      date: 'April 12, 2024',
+      time: '9:00 AM - 5:00 PM',
+      badgeId: 'badge1',
+      description: 'A cutting-edge technology conference showcasing the latest in tech innovations.',
+      location: 'Silicon Valley Convention Center'
+    },
+    { 
+      id: 2, 
+      name: 'Leadership and Innovation Seminar', 
+      date: 'May 20, 2024',
+      time: '9:00 AM - 5:00 PM',
+      badgeId: 'badge2',
+      description: 'A seminar focused on developing leadership skills and innovative business strategies.',
+      location: 'New York Marriott Marquis'
+    },
+    { 
+      id: 3, 
+      name: 'Business Networking Mixer', 
+      date: 'June 1, 2024',
+      time: '9:00 AM - 5:00 PM',
+      badgeId: 'badge3',
+      description: 'An informal gathering for professionals to network and share ideas in a relaxed atmosphere.',
+      location: 'Chicago Rooftop Bar'
+    },
+    { 
+      id: 4, 
+      name: 'Annual Corporate Excellence Gala', 
+      date: 'July 10, 2024',
+      time: '9:00 AM - 5:00 PM',
+      badgeId: 'badge4',
+      description: 'A prestigious gala celebrating corporate achievements and excellence in the industry.',
+      location: 'The Ritz-Carlton, Paris'
+    }
   ];
 
   constructor() { }

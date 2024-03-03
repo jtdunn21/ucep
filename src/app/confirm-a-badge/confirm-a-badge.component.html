@@ -1,10 +1,14 @@
-<div class="confirm-badge-container">
+<div class="display-badge-container">
+  <h1><strong>{{ badgeId }}</strong></h1>
+</div>
+
+<div class="confirm-badge-container">  
   <h1 class="title">Is this your correct A-Badge?</h1>
   <br>
   <form class="confirm-badge-form">
     <button (click)="confirmBadge(true)" class="submit-btn">Yes</button>
   </form>
-  <h1><strong>{{ badgeId }}</strong></h1>
+  <br>
   <form class="confirm-badge-form">
     <button (click)="confirmBadge(false)" class="submit-btn">No</button>
   </form>

@@ -1,9 +1,13 @@
 <div class="event-list">
-  <h2>Upcoming Events</h2>
+  <h2><strong>Upcoming Events</strong></h2>
+  <br>
   <ul>
     <li *ngFor="let event of events">
       <h3>{{ event.name }}</h3>
-      <p>Date: {{ event.date }}</p>
+      <p>{{ event.date }}&nbsp;&nbsp;&nbsp;
+         {{ event.location }}&nbsp;&nbsp;&nbsp;
+         {{event.time}}</p>
+      <p>{{ event.description }}</p>
       <button (click)="selectEvent(event.id)">Confirm Attendance</button>
     </li>
   </ul>
