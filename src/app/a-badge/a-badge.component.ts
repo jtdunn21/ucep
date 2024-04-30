@@ -25,7 +25,7 @@ export class ABadgeComponent {
   autoCapitalize() {
     if (this.badgeId.length > 0) {
       // Capitalize the first letter and ensure it's an 'A'
-      this.badgeId = 'A' + this.badgeId.substring(1).replace(/[^0-9]/g, '');
+      this.badgeId = 'B' + this.badgeId.substring(1).replace(/[^0-9]/g, '');
       // Limit the string to 7 characters
       this.badgeId = this.badgeId.substring(0, 7);
     }
